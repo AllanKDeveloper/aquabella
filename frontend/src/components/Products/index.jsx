@@ -5,8 +5,6 @@ import { Container } from './styles';
 import { Button } from '../Button';
 
 import line from '../../assets/products/linha.svg';
-import waterSm from '../../assets/products/agua1.png';
-import waterXm from '../../assets/products/agua2.png';
 
 export function Products({ items = [] }) {
 	return (
@@ -20,50 +18,39 @@ export function Products({ items = [] }) {
 					</div>
 				</header>
 				<main>
-					<section>
-						<Image
-							src={waterSm}
-							alt="Agua"
-							layout="intrinsic"
-							width={174}
-							height={307}
-							className="imgWater"
-						/>
-						<div className="box">
-							<span>510ml</span>
-							<p>
-								Ideal para sua rotina e do tamanho da sua sede. A versatilidade
-								ideal para você hidratar-se bem.{' '}
-							</p>
-							<Link href="/">
-								<a>
-									<Button title="saiba mais" infos="true" />
-								</a>
-							</Link>
-						</div>
-					</section>
-					<section>
-						<Image
-							src={waterXm}
-							alt="Agua"
-							layout="intrinsic"
-							width={248}
-							height={437}
-							className="imgWaterB"
-						/>
-						<div className="box">
-							<span>1,5L</span>
-							<p>
-								A água que mata a sua vontade e mata sua sede. O tamanho
-								perfeito para seu dia a dia.
-							</p>
-							<Link href="/">
-								<a>
-									<Button title="saiba mais" infos="true" />
-								</a>
-							</Link>
-						</div>
-					</section>
+					{items.map((item, index) => {
+						const imgWaterSm = `${
+							item.icon.url.startsWith('/')
+								? process.env.NEXT_PUBLIC_STRAPI_API_URL
+								: ''
+						}${item.icon.url}`;
+
+						return (
+							<section>
+								<Image
+									src={imgWaterSm}
+									alt={item.title}
+									layout="intrinsic"
+									width={174}
+									height={307}
+									className="imgWater"
+								/>
+								<div className="box">
+									<span>{item.navName2}</span>
+									<p>
+										{item.description.length > 85
+											? `${item.description.substring(0, 85)}...`
+											: item.description}
+									</p>
+									<Link href="/produtos">
+										<a>
+											<Button title="saiba mais" infos="true" />
+										</a>
+									</Link>
+								</div>
+							</section>
+						);
+					})}
 				</main>
 			</Container>
 		</>

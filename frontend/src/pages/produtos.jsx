@@ -65,9 +65,8 @@ export default function produtos({ items }) {
 											>
 												<Image
 													src={imgWaterSm}
-													width="100vw"
-													height="100vw"
-													layout="fixed"
+													width="71"
+													height="125"
 													priority="true"
 												/>
 												<span>

@@ -5,7 +5,7 @@ import breakpoint from '../../_variables';
 export const Container = styled.div`
 	width: 100%;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: space-between;
 	gap: 2rem;
 
@@ -94,6 +94,7 @@ export const InfoProducts = styled.div`
 			font-weight: 600;
 			width: 20rem;
 			margin: 0 auto 1rem auto;
+			text-align: center;
 		}
 	}
 `;

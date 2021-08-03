@@ -5,6 +5,7 @@ export const Container = styled.div`
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
+	justify-content: center;
 
 	div {
 		background: #e2e2e2;
@@ -25,6 +26,7 @@ export const Container = styled.div`
 			color: #38b4db;
 			font-size: 0.8rem;
 			font-weight: 600;
+			line-height: 160%;
 		}
 
 		p {

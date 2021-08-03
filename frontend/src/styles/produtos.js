@@ -107,6 +107,7 @@ export const Content = styled.main`
 			flex-direction: column;
 			align-items: center;
 			gap: 7rem;
+			flex-wrap: wrap;
 
 			> header {
 				display: flex;
@@ -114,6 +115,7 @@ export const Content = styled.main`
 				justify-content: center;
 				gap: 7rem;
 				width: 100%;
+				flex-wrap: wrap;
 
 				#selected {
 					opacity: 0.6;

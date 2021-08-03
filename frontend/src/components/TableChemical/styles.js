@@ -5,6 +5,7 @@ import breakpoint from '../../_variables';
 export const Container = styled.div`
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 
 	width: 50%;
 
