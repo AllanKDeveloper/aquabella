@@ -13,7 +13,7 @@ export function Heading(seo) {
 			<meta name="description" content={seo?.seo?.metaDescription || ''} />
 			<meta name="keywords" content={seo?.seo?.keywords} />
 			<meta name="author" content="Aquabella" />
-			<link rel="canonical" href="https://beallankehl.vercel.app" />
+			<link rel="canonical" href="https://aquabella.vercel.app" />
 			<meta property="og:image" content="/aquabella.png" />
 			{/* Facebook */}
 			<meta property="og:locale" content="pt_BR" />
@@ -27,7 +27,7 @@ export function Heading(seo) {
 				property="og:description"
 				content={seo?.seo?.metaDescription || ''}
 			/>
-			<meta property="og:url" content="https://beallankehl.vercel.app" />
+			<meta property="og:url" content="https://aquabella.vercel.app" />
 			<meta property="og:site_name" content="Aquabella" />
 			{/* Twitter */}
 			<meta name="twitter:card" content="summary" />
@@ -39,8 +39,8 @@ export function Heading(seo) {
 				name="twitter:title"
 				content={seo?.seo?.metaTitle || 'Aquabella | Home'}
 			/>
-			<meta name="twitter:site" content="@allankehl" />
-			<meta name="twitter:creator" content="@allankehl" />
+			<meta name="twitter:site" content="@aquabella" />
+			<meta name="twitter:creator" content="@aquabella" />
 			<meta name="twitter:image" content="/aquabella.png" />
 		</Head>
 	);
