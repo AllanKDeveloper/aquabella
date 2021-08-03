@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/origin",
+      "handler": "origin.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/origin",
+      "handler": "origin.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/origin",
+      "handler": "origin.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

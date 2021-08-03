@@ -1,0 +1,84 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "name": "Página - Quem somos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Surgimos da vontade de oferecer qualidade para você beber.",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "default": "Somos uma distribuidora de água mineral que surgiu com a descoberta de um poço artesiano nos anos 2000, em Vista Alegre do Prata, no Rio Grande do Sul, que fez nascer um sonho de levar a melhor água mineral para o mercado. Sendo assim, em 2009, iniciaram-se os estudos para implantação da distribuidora de água mineral, assim como a construção de duas novas fontes para análise e a construção do pavilhão para envasamento.  Logo em 2016, conseguimos a concessão para lavrar a água mineral e, em 2021, chegou o momento de levarmos a qualidade da nossa água até você junto com a nossa história.",
+      "required": true
+    },
+    "gallery": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "mission": {
+      "type": "text",
+      "default": "Facilitar a distribuição de água mineral com qualidade.",
+      "required": true
+    },
+    "vision": {
+      "type": "text",
+      "default": "Ser líder do segmento na região em vendas e exportação.",
+      "required": true
+    },
+    "values": {
+      "type": "richtext",
+      "required": true
+    },
+    "titleDistributor": {
+      "type": "string",
+      "required": true,
+      "default": "Seja um distribuidor"
+    },
+    "descriptionDistributor": {
+      "type": "text",
+      "default": "Você pode ser um distribuidor dessa água carregada de benefícios e história. Faça parte e distribua qualidade.",
+      "required": true
+    },
+    "showButton": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "buttonLink": {
+      "type": "string"
+    },
+    "mediaDistributor": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "subDesctription": {
+      "type": "text"
+    }
+  }
+}

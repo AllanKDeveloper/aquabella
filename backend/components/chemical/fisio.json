@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_chemical_fisios",
+  "info": {
+    "name": "Tabela Caract. Físico-Químicas",
+    "icon": "tablets",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

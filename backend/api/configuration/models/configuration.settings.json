@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "configurations",
+  "info": {
+    "name": "Informações da empresa",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "address": {
+      "type": "string",
+      "default": "Rua Linha General Osório, 1001 Bairro Capela - Santo Antônio  Vista Alegre do Prata/RS – CEP 95325-000",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "default": "contato@aguaaquabela.com.br",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "default": "(54) 3022.2222",
+      "required": true
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    }
+  }
+}

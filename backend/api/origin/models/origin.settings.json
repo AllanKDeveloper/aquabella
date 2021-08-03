@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "origins",
+  "info": {
+    "name": "Página Origem",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Uma fonte de benefícios para sua saúde",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "default": "Estamos sediados em Vista Alegre do Prata, no Rio Grande do Sul, em uma pequena cidade da Serra Gaúcha. A cidade, foi fundada por imigrantes italianos e poloneses em 1988 e foi nessa cidade, que descobrimos a fonte batizada pelo nome de Dom Gentil, em homenagem a Gentil Antônio Bidese, patriarca da família e falecido na década de 80. É por meio desta fonte, que nasceu junto com a água carregada de minerais de qualidade o sonho de levar esse produto até você."
+    }
+  }
+}

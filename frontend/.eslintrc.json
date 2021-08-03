@@ -1,0 +1,52 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true,
+		"node": true
+	},
+	"extends": ["plugin:react/recommended", "airbnb", "prettier"],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"plugins": ["react", "prettier"],
+	"settings": {
+		"import/resolver": {
+			"node": {
+				"extensions": [".js", ".jsx", ".ts", ".tsx"]
+			}
+		}
+	},
+	"rules": {
+		"jsx-a11y/no-static-element-interactions": [
+			"error",
+			{
+				"handlers": [
+					"onClick",
+					"onMouseDown",
+					"onMouseUp",
+					"onKeyPress",
+					"onKeyDown",
+					"onKeyUp"
+				]
+			}
+		],
+		"react/destructuring-assignment": ["off"],
+		"react/jsx-props-no-spreading": "off",
+		"react/prop-types": 0,
+		"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+		"react/react-in-jsx-scope": "off",
+		"import/prefer-default-export": "off",
+		"jsx-a11y/anchor-is-valid": [
+			"error",
+			{
+				"components": ["Link"],
+				"specialLink": ["hrefLeft", "hrefRight"],
+				"aspects": ["invalidHref", "preferButton"]
+			}
+		]
+	}
+}

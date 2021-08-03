@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/diferentials",
+      "handler": "diferential.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/diferentials/count",
+      "handler": "diferential.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/diferentials/:id",
+      "handler": "diferential.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/diferentials",
+      "handler": "diferential.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/diferentials/:id",
+      "handler": "diferential.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/diferentials/:id",
+      "handler": "diferential.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

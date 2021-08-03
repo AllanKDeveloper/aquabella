@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "states",
+  "info": {
+    "name": "Estados",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "isRS": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "representatives": {
+      "via": "state",
+      "collection": "representative"
+    },
+    "value": {
+      "type": "uid",
+      "required": true
+    }
+  }
+}

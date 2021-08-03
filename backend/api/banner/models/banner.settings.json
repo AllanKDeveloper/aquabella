@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "banners",
+  "info": {
+    "name": "Banner",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Beba que nem água"
+    },
+    "text": {
+      "type": "text",
+      "default": "Pureza que refresca e transparência que hidrata. A água que oferece saúde a cada gole.",
+      "required": true
+    },
+    "showbutton": {
+      "type": "boolean",
+      "default": true
+    },
+    "buttontext": {
+      "type": "string"
+    },
+    "buttonlink": {
+      "type": "string"
+    },
+    "showButtonSec": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "buttonTextSec": {
+      "type": "string",
+      "required": true
+    },
+    "buttonLinkSec": {
+      "type": "string",
+      "required": true
+    },
+    "media": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

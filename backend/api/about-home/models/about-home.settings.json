@@ -1,0 +1,50 @@
+{
+  "kind": "singleType",
+  "collectionName": "aboutHomes",
+  "info": {
+    "name": "Pagina Inicial",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "media": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "icon": {
+      "type": "richtext"
+    },
+    "showButton": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "buttonText": {
+      "type": "string",
+      "required": false
+    },
+    "buttonLink": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

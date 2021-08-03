@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_chemical_composition_chemicals",
+  "info": {
+    "name": "Tabela Composição Química",
+    "icon": "table",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

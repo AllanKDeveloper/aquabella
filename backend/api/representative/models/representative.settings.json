@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "representatives",
+  "info": {
+    "name": "Representantes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "state": {
+      "via": "representatives",
+      "model": "state"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

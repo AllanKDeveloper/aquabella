@@ -1,0 +1,86 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "Produtos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ChemicalItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "chemical.composition-chemical"
+    },
+    "fisioChemical": {
+      "type": "component",
+      "repeatable": true,
+      "component": "chemical.fisio"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "media": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "showButton": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "buttonText": {
+      "type": "string",
+      "required": true
+    },
+    "buttonLink": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "navName": {
+      "type": "string",
+      "required": true
+    },
+    "navName2": {
+      "type": "string",
+      "required": true
+    },
+    "navName3": {
+      "type": "string",
+      "required": true
+    },
+    "extra": {
+      "type": "richtext"
+    }
+  }
+}
